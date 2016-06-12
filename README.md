@@ -22,14 +22,13 @@ Installation
 This application assumes that calibre is installed to either `C:\Program Files (x86)\Calibre2\` (windows) or  `/Applications/calibre.app` (mac). If your installation appears somewhere else you'll need to either:
 
 1. hack the code (at the top of index.js)
-2. always specify the location of the [calibre command line tool (calibre-ebook)](https://manual.calibre-ebook.com/generated/en/ebook-convert.html) as a parameter. eg:
+2. specify the location of the [calibre command line tool (calibre-ebook)](https://manual.calibre-ebook.com/generated/en/ebook-convert.html) as a parameter. 
 
-	
-	node index.js "./path1" "./path2" "--calibre=c:\utils\ebook-convert"
+eg:
+	node index.js "./path1" "./path2" "--calibre=c:\utils\ebook-convert.exe"
 
 
-
-The good news is that this is untested, and you may end up choosing the first option (hack the script) anyway.
+The good news is that this is largely untested, and you may end up choosing the first option (hack the script) anyway.
 
 
 

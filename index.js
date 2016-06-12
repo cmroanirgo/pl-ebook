@@ -17,7 +17,7 @@ var execFile = require('child_process').execFile;
 // use preconfigured folder locations based on the current platform. (*liable to break*)
 var isWin = /^win/.test(process.platform);
 var calibre_folder = isWin ? 'C:\\Program Files (x86)\\Calibre2\\' : '/Applications/calibre.app/Contents/console.app/Contents/MacOS/';
-var cmd = 'ebook-convert'; // see https://manual.calibre-ebook.com/generated/en/ebook-convert.html
+var cmd = 'ebook-convert' + (isWin ? '.exe':''); // see https://manual.calibre-ebook.com/generated/en/ebook-convert.html
 
 // helper functions
 function log(str) { console.log(str); }
