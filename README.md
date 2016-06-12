@@ -24,13 +24,12 @@ This application assumes that calibre is installed to either `C:\Program Files (
 1. hack the code (at the top of index.js)
 2. always specify the location of the [calibre command line tool (calibre-ebook)](https://manual.calibre-ebook.com/generated/en/ebook-convert.html) as a parameter. eg:
 
-	'''
+	
 	node index.js "./path1" "./path2" "--calibre=c:\utils\ebook-convert"
 
-	'''
 
 
-	The good news is that this is untested, and you may end up choosing the first option (hack the script) anyway.
+The good news is that this is untested, and you may end up choosing the first option (hack the script) anyway.
 
 
 
@@ -39,9 +38,8 @@ Usage
 
 You will most likely wish to wrap this in a batch file (/shell script) for day to day use.
 
-'''
-node index.js "./path/to/source/files/with/ebooks" "./path/to/compare" [name_of_result.html]
-'''
+	node index.js "./path/to/source/files/with/ebooks" "./path/to/compare" [name_of_result.html]
+
 
 
 
