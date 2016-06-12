@@ -1,0 +1,17 @@
+{
+  "name": "pl-ebook",
+  "version": "0.0.2",
+  "description": "An ebook (epub, mobi, etc) plagiarism comparison tool",
+  "main": "index.js",
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "minimist": "^1.2.0",
+    "pl-copyfind": "latest"
+  },
+  "scripts": {
+    "test": "npm run test:1 -s",
+    "test:1": "node index.js ./tests/left ./tests/right"
+  },
+  "author": "Craig Monro",
+  "license": "MIT"
+}
